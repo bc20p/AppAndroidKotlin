@@ -3,7 +3,7 @@ package com.paula.arquitectura.model
 class QuoteProvider {
     companion object{
         fun random():QuoteModel{
-            val position:Int = (0..10).random()
+            val position:Int = (0..8).random()
             return quote[position]
         }
         private val quote = listOf<QuoteModel>(
@@ -37,12 +37,6 @@ class QuoteProvider {
                 author = "Anonymous"
             ),
             QuoteModel(quote = "Things aren’t always #000000 and #FFFFFF", author = "Anonymous"),
-            QuoteModel(quote = "Talk is cheap. Show me the code.", author = "Linus Torvalds"),
-            QuoteModel(
-                quote = "Software and cathedrals are much the same — first we build them, then we pray.",
-                author = "Anonymous"
-            ),
-            QuoteModel(quote = "¿A que esperas?, suscríbete.", author = "AristiDevs")
         )
     }
 }
